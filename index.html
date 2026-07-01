@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGUER HOUSE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ================= HEADER ================= -->
+    <header>
+        <div class="container">
+         <nav>
+             <h1>BURGUER HOUSE</h1>
+             <ul>
+                <li><a href="#inicio">inicio</a></li>
+                <li><a href="#menu">menu</a></li>
+                <li><a href="#nosotros">nosotros</a></li>
+                <li><a href="#contacto">contacto</a></li>
+        
+             </ul> 
+             <button> carrito(<span id="contador">0</span>)</button>
+           </nav>
+        </div>   
+    </header>
+    <!-- ================= HERO ================= -->
+     <section class="hero" id="inicio">
+        <div class="container hero-content">   
+            <div class="hero-text">
+               <h2>La mejor hamburguesa de la ciudad </h2>
+               <p>Difruta de hamburguesas artesaneles hechas con ingredientes frescos 
+                y el mejor sabor.
+               </p>
+               <a href="#menu" class="btn">Ver Menu</a>
+            </div>
+        </div>    
+        <div class="hero-img">
+            <img src="img/burguer.png" alt="hamburguesa">
+
+        </div>
+        
+    
+    
+    <!-- ==================especialidades==================-->
+     <section class="especialidades" id="menu">
+        <h2> Nuestras Especialidades</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="img/hamburguesa2.png" alt="hamburguesa">
+                <h3>chese burguer</h3>
+                <p>carne 100% de res con queso cheddar.</p>
+                <span>Bs. 35  </span>
+                <button 
+                    class="btn-comprar"
+                    data-nombre="chese burguer"
+                    data-precio="35">
+                    comprar
+                </button>
+            </div>
+            <div class="card"> 
+                <img src="img/hamburguesa3.png" alt="hamburguesa extra">
+                <h3>BBQ Burguer</h3>
+                <p>con salsa BBQ y cebolla carmelizada.</p>
+                <span>Bs. 42</span>
+                <button 
+                    class="btn-comprar"
+                    data-nombre="BBQ Burguer"
+                    data-precio="42">
+                    comprar
+                    </button>
+            </div>
+            <div class="card">
+                <img src="img/hamburguesa1.png" alt="hamburguesa">
+                <h3>Doble Burguer</h3>
+                <p>doble carne, doble queso y mucho sabor.</p>
+                <span>Bs. 48</span>
+                <button 
+                class="btn-comprar"
+                data-nombre="Doble Burguer"
+                data-precio="48">
+                comprar
+                </button>
+
+            </div>
+        </div>   
+     </section> 
+     <!-- ===================carrito=================== -->
+         <section class="carrito">
+            <h2> Tu Carrito</h2>
+            <div id="lista-carrito">
+                <p id="mensaje-vacio">Tu carrito esta vacio.</p>
+            </div>
+            <button id="vaciar-carrito">vaciar carrito</button>
+
+         </section>
+     </section>
+    <!-- ================== promocion ================== -->
+     <section class="promo" id="nosotros">
+        <div class="promo-text">
+            <h2>¡2x1 todos los martes!</h2>
+            <p>
+                Aprovecha nuetra promocion especial y disfruta de las mejores hamburguesas con tus amigos o familia.
+            </p>
+            <a href="#nosotros" class="btn">Ver Promociones</a>
+        </div>
+     </section>
+     
+     <footer id="contacto">
+        <h2>BURGUER HOUSE</h2>
+        <p>Sucre-Bolivia</p>
+        <p>+591 63742776</p>
+        <p>burguerhouse@gmail.com</p>
+        <div class="redes">
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">tiktok</a>
+        </div>
+        <p class="copy">
+            © 2026 Burguer House - Todos los derechos reservados.
+        </p>
+        
+    </footer>
+<script src="script.js"></script>    
+</body>
+</html>
